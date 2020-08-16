@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Mount Union College Computer Science and Information Systems</title>
+  </head>
+  <body bgColor="#FFFFFF">
+  
+<table border=2>
+   <tr>
+      <td width=300 height=400>
+         <APPLET CODEBASE="build/classes" CODE="MUCApplet.class" NAME="MUCApplet"
+         width=300 height=400 align=top>
+         If you had a java-enabled browser, you would see an applet here.
+         </APPLET>
+      </td>
+      <td width=300 height=400>
+         <pre>
+/*
+ * Sailboat.java
+ *
+ * John Kirchmeyer
+ * September 8, 2006
+ *
+ * Demonstrates how to use Polygons.
+ *
+ * Step 1:   Declare a Polygon
+ * Step 2:   Instantiate a Polygon
+ * Step 2.5: Add points to the Polygon
+ * Step 3:   Draw the Polygon
+ */
+import java.awt.*;
+public class Sailboat
+{ // Sailboat
+
+    private int over;
+    private int down;
+    private final int WIDTH = 120;
+    private final int HEIGHT = 20;
+    private final int BOW_WIDTH = 30;
+    private final int MAST_HEIGHT = 65;
+    
+    private Color boatColor;
+    
+    // Step 1: Declare the Polygons
+    private Polygon bodyForBoat;
+    private Polygon sailForBoat;
+    
+    public Sailboat(int over, int down)
+    { // constructor
+        this.over = over;
+        this.down = down;
+        
+        boatColor = Color.MAGENTA;
+
+        // Step 2: Instantiate the Polygons
+        bodyForBoat = new Polygon();
+        sailForBoat = new Polygon();
+        
+        // Step 2.5: Add points to the Polygons
+
+        bodyForBoat.addPoint(over, down);
+        bodyForBoat.addPoint(over+WIDTH, down);
+        bodyForBoat.addPoint(over+WIDTH, down+HEIGHT);
+        bodyForBoat.addPoint(over+BOW_WIDTH, down+HEIGHT);
+        
+        sailForBoat.addPoint(over+WIDTH/2, down-MAST_HEIGHT); 
+        sailForBoat.addPoint(over+WIDTH, down-MAST_HEIGHT/2); 
+        sailForBoat.addPoint(over+WIDTH/2, down); 
+    } // constructor
+    
+    public void draw(Graphics g)
+    { // draw
+
+        g.setColor(boatColor);
+
+        // Step 3: draw the Polygons.
+        // Actually, you have to pass the Polygon
+        // as a parameter to the fillPolygon method
+        // of a Graphics object and ask it to draw the Polygon
+        
+        // draw the body
+        g.fillPolygon(bodyForBoat);
+        
+        // draw the mast
+        g.fillRect(over+WIDTH/2, down-MAST_HEIGHT, 5, MAST_HEIGHT);
+        
+        // draw the sail
+        g.fillPolygon(sailForBoat);
+    } // draw
+    
+} // Sailboat</pre>
+      </td>
+   </tr>
+</table>
+
+  </body>
+</html>
