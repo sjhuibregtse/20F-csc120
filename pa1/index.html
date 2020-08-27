@@ -33,13 +33,22 @@ two different-looking things on the screen, and each object must be
 drawn in a different screen location.&nbsp; Additionally, the student's
 name must be displayed somewhere in the output window using the <code>drawString</code>
 method of the <code>Graphics</code> class.&nbsp; Details of this
-assignment and links to several example output screens appear below. <br>
+assignment appear below. <br>
   <br>
 In effect, this assignment is quite similar to the Boat lab that we've worked on 
 recently; with the
 requirement that two different-looking classes are written by the
 student, and at least two objects from each of the classes is drawn on
 the screen.
+</blockquote>
+
+<h3> Examples: </h3>
+<blockquote>
+    Here are several examples of program output that meets the requirements for the assignment.&nbsp; Click on an image to see a larger version.<br/><br/>
+    <a href="Samples/Quiddich.png" target="_blank"><img src="Samples/Quiddich.png" width="401" height="316"  /></a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="Samples/PA1JFK.jpg" target="_blank"><img src="Samples/PA1JFK.jpg" width="410" height="339" /></a> <br/><br/>
+    <a href="Samples/PA1-bbc.png" target="_blank"><img src="Samples/PA1-bbc.png" width="310" height="288" /></a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="Samples/PA1-bbc2.png" target="_blank"><img src="Samples/PA1-bbc2.png" width="310" height="288" /></a> <br/><br/>
 </blockquote>
 
 <h3> Instructions and Requirements: </h3>
@@ -79,9 +88,8 @@ of your <b>PA1</b> project: <br/>
     <p>In the <code>MUPanel </code>class, you must DECLARE two or
 more private objects of type <code>ThingOne</code>, and also
 DECLARE two or more objects of 
-type <code>ThingTwo</code>.&nbsp; As an illustration, the first link
-in the Examples section
-below shows a program that declares five (5) objects from a <code>ThingOne</code> class that draws
+type <code>ThingTwo</code>.&nbsp; As an illustration, the program that produced the
+Skiing Snowmen sample above declares five (5) objects from a <code>ThingOne</code> class that draws
 a Pine Tree, and two (2) objects
 from a <code>ThingTwo</code> class that draws a Snowman.
     <br>
@@ -98,7 +106,7 @@ each object's <code>draw</code> method. </p>
   <li>
     <p> In the <code>paintComponent</code> method, use the <code>g.drawString</code>
 method to draw a text string somewhere in the output window with a
-message that includes your name.&nbsp; Examine the examples below to
+message that includes your name.&nbsp; Examine the samples shown above to
 see how this can be done, and what might be acceptable. </p>
   </li>
   <li>
@@ -115,10 +123,11 @@ aspects of the individual
 objects.&nbsp; In the starter files that are given with this assignment, 
 the <code>ThingOne</code> class has six data members (some of which you might not use) that are
 given to you as an example, and the <code>ThingTwo</code> class has no data members given
-to you.&nbsp; In the first example below, the 
-class that draws the Snowmen has a <code>hatColor</code>
+to you.&nbsp; In the Skiing Snowmen sample above, the <code>Snowman</code> class has a <code>hatColor</code>
 data member of type <code>Color</code>, in addition to <code>anchorX</code>
 and <code>anchorY</code>.</p>
+<p>IMPORTANT:&nbsp; remember that anything that will be different from object to object must be represented by a property in the class definition for the object.&nbsp; For example, the <code>PineTree</code> class in that the Skiing Snowmen sample would only need <code>anchorX</code> and <code>anchorY</code>, because all of the Pine Trees are the same color, shape and size.&nbsp; The <code>Flower</code> class in the Hummingbird sample above would need 5 properties (<code>anchorX</code>, <code>anchorY</code>, <code>petalColor</code>, <code>centerColor</code> and <code>stemLength</code>).
+</p>
   </li>
   <li>
     <p>The <code>ThingOne</code> and <code>ThingTwo</code> classes MUST each have
@@ -203,7 +212,7 @@ polygon
 (see the <a href="../howDoI/PolygonDemo/PolygonDemo.html">Polygon Demo page</a> for examples).</li> <br/>
       <li> Yet another possible enhancement would be to use a different
         <code>Font</code> when you draw the string in the output
-window.&nbsp; The first two examples below use a different font than
+window.&nbsp; Three of the four samples above use a different font than
 the default Java setting.&nbsp; Look up the <code>Font</code> class in
 the Java Class Documentation. 
 See the <a href="../howDoI/FontDemo/FontDemo.html">Font Demo page</a> 
@@ -242,13 +251,6 @@ in <a href="http://d2l.mountunion.edu" target="_blank">D2L</a>.
 assignment INDIVIDUALLY. </h3>
 
 
-<h3>Examples: </h3>
-<ul>
-  <li><a href="Samples/PA1-bbc.png" target="_blank">Example # 1</a></li>
-  <li><a href="Samples/PA1-bbc2.png" target="_blank">Example # 2</a></li>
-  <li><a href="Samples/PA1JFK.jpg" target="_blank">Example # 3</a></li>
-  <li><a href="Samples/Quiddich.png" target="_blank">Example # 4</a></li>
-</ul>
 <p> </p>
 <h3> Grading Rubric: </h3>
 <blockquote> <a href="PA1_rubric.html" target="_blank"> PA1 Grading Rubric</a>
