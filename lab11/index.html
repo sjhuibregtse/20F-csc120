@@ -282,12 +282,9 @@ The ASCII Table
 						     using a semicolon as the delimiter (see the code example above) </li>
 						<li> <code> for (Integer p = 0; p < part.length; p++) {<br/> &nbsp; &nbsp; part[p] = part[p].trim();<br/>} // end for</code> </li>
 						<li> instantiate element <code>x</code> (or whatever you called your for loop control
-						     variable) of the array of <code>Instrument</code> objects, using the <code>part</code> array as the values to pass to the constructor method  </li>
-							 <ul>
-							     <li> the first parameter for the constructor call should be &nbsp;<code>part[0]</code> </li>
-							     <li> the second parameter for the constructor call should be &nbsp;<code>part[1]</code> </li>
-							     <li> the third parameter for the constructor call should be &nbsp;<code>Integer.parseInt( part[2] )</code> </li>
-							 </ul>
+						     variable) of the array of <code>Instrument</code> objects, using these parameters inside the parentheses: <br/><br/>
+							 &nbsp; &nbsp; &nbsp; &nbsp; <code> ( part[0], part[1], Integer.parseInt( part[2] ) )</code>
+						</li>
 						<li> change the <code>append</code> call inside the loop to be this:
 <pre>
     outputArea.append( "line " + x + ": " + instrumentArray[x].toString() + "\n" );
