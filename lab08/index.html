@@ -186,36 +186,18 @@ run
                 <ul>
                     <li> declare two <code>Integer</code> variables called <code>x</code>
                          and <code>y</code> </li>
-                    <li> set <code>x</code> to a random integer
-                         in the range from 0 to 590 </li>
-                    <li> set <code>y</code> to a random integer
-                         in the range from 0 to 390 </li>
+                    <li> set <code>x</code> to the following value:&nbsp;  <code>(int) (Math.random()*590)</code> </li>
+                    <li> set <code>y</code> to the following value:&nbsp;  <code>(int) (Math.random()*590)</code> </li>
                     <li> instantiate one element of the array,
                          using <code>x</code> and <code>y</code> as the two
                          parameters that
                          are passed into the <code>Star</code> constructor method. </li>
                 </ul>
             <br />
-            Hint:&nbsp; here is an example of code that sets the <code>Integer</code>
-            variable <code>randNum</code>
-            to a random integer in the range from 0 to <em><b>upper</b></em>:
-<b><pre>
-    Random randGenerator = new Random();
-
-    randNum = randGenerator.nextInt(upper + 1);
-</pre></b>
-            <p>Put the first of these two lines above&nbsp; the <code>for</code>
-              loop, and then you can put lines similar to the second
-              one&nbsp; inside
-              the <code>for</code> loop to
-              put random numbers into <code>x</code> and <code>y</code>.
-              (Note; a
-              light bulb will appear beside the first line; just click
-              on it and then
-              select the <font face="Arial">Add&nbsp;import&nbsp;for&nbsp;java.util.Random</font>
-              item from the
-              menu that pops up.</p>
-          </li>
+            Note:&nbsp; <code>Math.random()</code>
+            is a method that returns a random decimal value between 0 and 1.&nbsp; It can be used to introduce unpredictability
+		  in our Java programs
+	  </li>
           <li>
             <p>In the <code>paintComponent</code> method of the <b>MUPanel.java</b>
               file, write code that uses a loop to call the <code>draw</code>
