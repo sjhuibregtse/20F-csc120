@@ -7,8 +7,8 @@
 
 <body bgcolor="#ffffff">
 <font color="#660066">
-<center><h2>CSC 120 <br/>
-            Lab # 5 </h2></center></font>
+<center><h1>CSC 120 <br/>
+            Lab # 5 </h1></center></font>
 
 <font face="tahoma, arial">
     In this lab we will use the NetBeans GUI Designer to create programs that respond to
@@ -16,10 +16,11 @@
 </font>
 
 <hr/>
+	<h2>Part 1</h2>
 <ol>
     <li> When we write programs that respond to user input actions, we need to use a different starting template
-	     than we have been using so far this semester.&nbsp; The best thing to do will be to copy the template
-	    files to your <b>CSC120</b> folder, so you will have them to use any time you want to start a new
+	     than we have been using so far this semester.&nbsp; We recommend that you copy the template
+	    files into your <b>CSC120</b> folder, so you will have them to use any time you want to start a new
 		 interactive program. <br/><br/>
 		 
 		 To do this, use a web browser to visit the <a href="../resources.html" target="_blank"> CSC 120 Resources page</a>.&nbsp;
@@ -34,13 +35,15 @@
 		 should browse as deep in the folder as you can, until you see three files named "MUFrame.form", "MUFrame.java"
 		 and "MUPanel.java".&nbsp; Highlight all three of these files now, and right-click on them to choose "Copy".
 	     <br/><br/> </li>
-		 
+	<li>For this lab there are three parts, so it is recommended that you create a lab folder inside your <strong>CSC120</strong> 
+		folder to store all three parts.  An appropriate name would be <strong>Lab5-LastName</strong> so you can zip and submit 
+		all three parts to the Lab 5 dropbox in D2L without issues as a single file.</li>
     <li> Launch NetBeans, and create a new Java Application project named <em>Lab5</em> in your
          <b>CSC120</b> folder.&nbsp; Expand the tree for this new project so that you can see the <b>src</b>
 		 folder for the project, and paste <b><u>ALL THREE</u></b>
 		 files you copied in the previous step into the <b>src</b> folder.&nbsp; Note:&nbsp; only the two .java
 		 files will show up in the tree.&nbsp;
-		 Run the MUFrame program by clicking on the file named <b>MUFrame.java</b> and choose
+		 Run the MUFrame program by right clicking on the file named <b>MUFrame.java</b> and choose
 		 "Run File" from the pop-up menu.&nbsp; You should obtain a graphical output window that displays
 		 "Hello World" if you copied all the files properly. <br/><br/> </li>
 
@@ -80,9 +83,9 @@
 		 We will always want to make two changes to GUI components when we add them to the Designer &mdash;
 		 we should change the text displayed in/on the component, and we should change the name of the variable
 		 in the program that refers to the component, to use a name that is suited to the task we are performing.
-		 &nbsp;Right-click on the button you just added to the Designer and choose the "Edit Text" option
-		 from the pop-up menu.&nbsp; Change the default text on the face of the button to "Click Me!".&nbsp;
-		 Then right-click again on the button and choose the "Change Variable Name..." option, and rename the 
+		 &nbsp;Right-click on the button you just added to the Designer and choose the "Edit Text" option 
+	    	(properties - properties - text) from the pop-up menu.&nbsp; Change the default text on the face of the button to "Click Me!".&nbsp;
+		 Then right-click again on the button and choose the "Change Variable Name..." option (properties - code - variables), and rename the 
 		 variable as "myButton".<br/><br/>
 
 		 Run the MUFrame program and there should be a button on the screen that says "Click Me!".&nbsp; Try
@@ -111,8 +114,11 @@
 	     &nbsp;As an example, be sure you are in Source view for the MUFrame.java file in the editor window, and scroll
 		 up toward the top of the program to the comment that says "// declare private data here"; right under that comment,
 		 declare an Integer variable named <code>timesClicked</code>.&nbsp; Then inside the constructor method for the
-		 MUFrame class, insert an assignment statement that stores the value zero in <code>timesClicked</code>.&nbsp; Next,
-		 change the code in the <b>myButtonActionPerformed</b> method to the following:
+		 MUFrame class, insert an assignment statement that stores the value zero in <code>timesClicked</code>
+<pre>
+   private Integer timesClicked = 0;
+</pre>
+	    Next, change the code in the <b>myButtonActionPerformed</b> method to the following:
 <pre>
     timesClicked = timesClicked + 1;
     System.out.println("Times the button has been clicked: " + timesClicked);
@@ -121,7 +127,9 @@
 		 of how many times you have clicked the button.&nbsp; Run the program several times to test it out, and then
 		 close the <b>Lab5</b> project.
 		 <br/><br/> </li>
-
+	</ol>
+	<h2>Part 2</h2>
+<ol>
     <li> Create a new NetBeans Java Application project named <em>Lab5Part2</em> in your
          <b>CSC120</b> folder (NO SPACES IN THE PROJECT NAME, PLEASE!).&nbsp; 
 		 Using File Explorer, copy <b><u>ALL THREE</u></b>
@@ -133,7 +141,8 @@
 		 
 		 Double-click the "MUFrame.java" file to open the GUI Designer, and use the Designer to make a 
 		 data entry form that looks like <a href="NameForm.png" target="_blank"> this
-		 example</a>.&nbsp; To do this, add these components to the Designer display, positioning them approximately
+		 example</a>.&nbsp; To do this, add the below components to the Designer display in the order presented in the table,
+	         positioning them approximately
 		 in the positions shown in the example, and making them approximately the same size as in the example:<br/><br/>
 		 <table border="1" width="80%" align="center">
 		  <tr>
@@ -200,7 +209,10 @@
         outputArea.setText("Full Name is " + ans);
 </pre>		 
 		 Run the program, and enter a series of names, clicking the button each time.&nbsp; The program should
-		 display the full names for the latest data you've entered. <br/><br/>
+		 display the full names for the latest data you've entered. <strong>If your program does not display the full names
+	    	STOP and troubleshoot your code.  Do not move on until you have the previous steps completed and working. <br/><br/>
+	    
+	    	
 		 
 		 What if we wanted to see all the names that we've entered?&nbsp; The current version of the program
 		 replaces the previous name with the new name.&nbsp; If we want to preserve the output we've generated so
@@ -232,7 +244,9 @@
 		 NOTHING in between -- in other words, it's the empty string).&nbsp;Run the program and notice that
 		 when you click the button, the fields are blanked out so you can enter new names without erasing the previous
 		 names. <br/><br/> </li>
-		 
+	</ol>
+	<h2>Part 3</h2>
+<ol>
     <li> Close the <b>Lab5Part2</b> project, and then create a new NetBeans Java Application project named 
 	     <em>Lab5Part3</em> in your
          <b>CSC120</b> folder (NO SPACES IN THE PROJECT NAME, PLEASE!).&nbsp; 
@@ -297,9 +311,11 @@
 	     both of them as .png files.&nbsp; Be sure to have more than one name displayed on screen for Part2, and to have moved the 
 	         message to the lower-right quadrant of the screen for Part3.&nbsp; Your name must be displayed in the title of the frame
 	    of the display windows.&nbsp;
-		 Next, use File Explorer to make .zip files of your entire <b>CSC120\Lab5Part2</b> and 
+		 Next, use File Explorer to make a .zip files of your entire Lab 5 folder including all parts into a single zip file.  If you didn't
+	    	create a Lab5-LastName folder, you will need to zip <b>CSC120\Lab5Part2</b> and 
 	     <b>CSC120\Lab5Part3</b> folders into a single zip file.&nbsp; Then turn <b>ALL OF THE FILES</b> into the Lab5 dropbox in 
-		 <a href="http://d2l.mountunion.edu" target="_blank"> D2L</a>. <br/><br/>
+		 <a href="http://d2l.mountunion.edu" target="_blank"> D2L</a>. <em>Note, be sure to follow the guidance provided by your professor 
+	    regarding requirements for submitting one or more files.<br/><br/>
 </ol>
 
 <h3> Grading Rubric: </h3>
