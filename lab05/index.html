@@ -113,10 +113,14 @@
     <li> We can add variables, objects and other methods to the MUFrame.java file to perform processing operations.
 	     &nbsp;As an example, be sure you are in Source view for the MUFrame.java file in the editor window, and scroll
 		 up toward the top of the program to the comment that says "// declare private data here"; right under that comment,
-		 declare an Integer variable named <code>timesClicked</code>.&nbsp; Then inside the constructor method for the
-		 MUFrame class, insert an assignment statement that stores the value zero in <code>timesClicked</code>
+		 declare an Integer variable named <code>timesClicked</code>.&nbsp; 
 <pre>
-   private Integer timesClicked = 0;
+   private Integer timesClicked;
+</pre>
+	Now, inside the constructor method for the
+		 MUFrame class, insert an assignment statement that stores the value zero in <code>timesClicked</code>    
+<pre>
+   timesClicked = 0;
 </pre>
 	    Next, change the code in the <b>myButtonActionPerformed</b> method to the following:
 <pre>
