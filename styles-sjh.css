@@ -1,13 +1,15 @@
-    
+td {
+    padding: 5px 5px;
+}
       
-      p.resource {
-    		text-align: center;
-    		font-size: 125%;
-    		border: thick solid #9370db;
-    		background-color: #e6e6fa;
-    		padding: 15px;
-    		margin: 5px 5px;
-    		border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
-    		-moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
-    		-webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
-    	}
+p.resource {
+    text-align: center;
+    font-size: 125%;
+    border: thick solid #9370db;
+    background-color: #e6e6fa;
+    padding: 15px;
+    margin: 5px 5px;
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+    -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+    -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
