@@ -29,21 +29,6 @@ p.resource {
     border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
     -moz-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
     -webkit-border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+
     
-    a:link {
-    color: #0000cd;
-    background-color: transparent:
-    }
-    a:visited {
-    color: #8a2be2;
-    background-color: transparent:
-    }
-    a:hover {
-    color: #a9a9a9;
-    background-color: transparent:
-    }
-    a:active {
-    color: #483d8b;
-    background-color: transparent:
-    }
 }
