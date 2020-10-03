@@ -1,3 +1,20 @@
+a:link {
+    color: #0000cd;
+    background-color: transparent:
+}
+a:visited {
+    color: #8a2be2;
+    background-color: transparent:
+}
+a:hover {
+    color: #a9a9a9;
+    background-color: transparent:
+}
+a:active {
+    color: #483d8b;
+    background-color: transparent:
+}
+
 td th {
     padding: 10px 10px;
 }
