@@ -112,10 +112,11 @@ method definition. &nbsp; <br>
 other than call the <code>repaint</code> method of the <code>muPanel</code>
 		      object.</em></blockquote>
 	      <li>Inside the <code>
-actionPerformed</code> method, as the first action to be taken in the
+moveButtonActionPerformed</code> method, as the first action to be taken in the
 method, add a call to the <code>moveObjects</code> method of the <code>muPanel</code>
 object &mdash; this method
-accepts NO parameters inside the parentheses of the method call.&nbsp;<br>
+accepts NO parameters inside the parentheses of the method call.&nbsp;  <em>Hint, revisit your Lab 5 project
+		      if you don't recall how to do this.<br>
 
 		      <blockquote><em>Note:&nbsp; you need to keep the <code>repaint</code> method call as the last action in 
 			      <code>moveButtonActionPerformed</code>.</em></blockquote>
@@ -172,15 +173,13 @@ and change the method call in the body of this method so that the <code>changeMo
 method of the <code>firstOne</code> object is invoked. </li>
 	      </ol>
       </li>
-	  </ol></ol>
-<h2>Part 4: Add More Objects and Functionality</h2>
-<ol start="6">
-      <li> Add an <code>actionPerformed</code> method for the Change Mood button: <br>
+	    
+	    <li> Add an <code>actionPerformed</code> method for the Change Mood button: <br>
         <br>
         <ol type="a">
           <li> In "Design" view for the <b>MUFrame.java</b> file, double-click
-		  on the changeMoodButton to attach an actionPerformed method.&nbsp; Edit
-the body of the <code>changeButtonActionPerformed</code> method so that it
+		  on the changeMoodButton to attach an ActionPerformed method.&nbsp; Edit
+the body of the <code>changeMoodButtonActionPerformed</code> method so that it
 calls the <code>changeObjectMoods
             </code>method of the <code>muPanel</code> object, and then calls
 			<code>repaint</code> for <code>muPanel</code>.<br>
@@ -194,6 +193,11 @@ versa. </li>
         </ol>
         <br>
       </li>
+	    
+	  </ol></ol>
+<h2>Part 4: Add More Objects and Functionality</h2>
+<ol start="7">
+      
 
   <li><b>Change the existing RoundHead and add another RoundHead.</b><br>
     <br>
