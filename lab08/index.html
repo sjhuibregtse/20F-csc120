@@ -65,28 +65,30 @@
     rhArray = new RoundHead[???];
 
     for (Integer index = 0; index &lt; rhArray.length; index++) {
-
-        rhArray[index] = new RoundHead( ?, ?, ?, ?, ?, ?, ?, ? );
+        Boolean isHappy;
+	Color hatColor;
+	Integer over, down, vertStep, horizStep, size;
+	
+	isHappy = true;
+	hatColor = Color.RED;
+	over = /* replace with a formula as described below */;
+	down = /* replace with a formula as described below */;
+	vertStep = 15;
+	horizStep = 10;
+	size = 25;
+	
+        rhArray[index] = new RoundHead( isHappy, hatColor, over, down, vertStep, horizStep, size, "Sammy" );
 	
     } // end of for loop
 </pre></b>
-            The body of this loop should instantiate <i>one</i> member
-            of the <code>rhArray</code>
-            array, using these parameter values: <br />
+            The code as written above won't work because you need to replace the right-hand sides of the assignment statements
+		  for over and down with a formula, as follows:<br />
             <br />
             <ul>
-              <li> the RoundHead should be HAPPY.&nbsp; This means use <b>true</b>
-                as the boolean parameter value in the constructor call.
-              </li>
-              <li> the RoundHead's hat should be RED. </li>
               <li> over should be a formula that computes 30 times the <b>loop control
                 variable</b>.</li>
               <li> down should be a formula that computes 20 times the <b>loop control
                 variable</b>.</li>
-              <li> the verticalStepSize should be 15.</li>
-              <li> the horizontalStepSize should be 10.</li>
-              <li> the size should be 25</li>
-              <li> the nickName should be "Sammy"<br />
                 <br />
               </li>
             </ul>
@@ -113,19 +115,14 @@
             in the
             array when it is constructed, as follows:&nbsp; inside the loop
             in the <code>MUPanel</code>
-            constructor method where we instantiate new <code>RoundHead</code>
-            objects, as the FIRST line in the loop body, declare a <strong>Boolean</strong> variable called
-            <code>isHappy</code>.&nbsp;
+		  constructor method where we store a value in <code>isHappy</code>, we
+		  need an if/else statement because sometimes we want <code>isHappy</code> to be true
+		  and other times we want it to be false.&nbsp;
             If
             the
             loop control variable is an EVEN NUMBER, store the value <b>true</b>
             in <code>isHappy</code>; else, store <b>false</b> in <code>isHappy</code>.&nbsp;
 
-Then
-replace
-the
-            <b>true</b> in the constructor call with <code>isHappy</code>.&nbsp;
-			The constructor call must be the LAST statement inside the for loop body.&nbsp;
 Recompile
 and
 run
@@ -137,13 +134,13 @@ run
           </li>
           <li> Change the program so that the first and last
             RoundHeads have a GREEN hat.&nbsp; Run the program to verify that the
-			first and last elements in the array have different colored hats.&nbsp; You'll need an if statement to do this, and a Color variable named
-		  <code>hatColor</code> should be declared where <code>isHapy</code> is declared. <br />
+			first and last elements in the array have different colored hats.&nbsp; You'll need an if statement to do this, and assign Color.GREEN
+		  or Color.RED to the variable named <code>hatColor</code> based on the value of <code>index</code>. <br />
             <br />
           </li>
           <li> Change the program so that if the loop control variable is less than 12, the RoundHeads in the 
 		    index position in the array
-		    is instantiated with a size of 20, and the ones in positions that are not less than 12 are initially
+		    is instantiated with a size of 20, and the ones in positions that are not less than 12 in the array are initially
 			30 pixels in size.&nbsp; Run the program to verify that your changes were made correctly.<br />
             <br />
           </li>
