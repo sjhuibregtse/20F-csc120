@@ -2,7 +2,7 @@
     CSC 120 Lab 9b
     
     Declare, instantiate and use an array of Book objects.
-    Originally authored by UMU CSIS faculty.
+    Originally authored by UMU CS faculty.
     
 */
 
@@ -20,7 +20,7 @@ public class MUPanel extends JPanel {
     // constructor method
     public MUPanel() {
         
-        setName("CSC 120 Lab 9a by Samantha Student");
+        setName("CSC 120 Lab 9b by Samantha Student");
         setUpGUI();
 
         
